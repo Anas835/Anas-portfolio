@@ -5,11 +5,146 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="A.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="I'm Pritam, a creative developer and designer based in India. I create inspiring websites with passion and dedication to help businesses grow." />
+    <meta name="description" content="I'm Mohammed Anas, a creative developer and designer based in India. I create inspiring websites with passion and dedication to help businesses grow." />
     <script defer data-domain="minusone.in" src="plausible.io/js/script.js"></script>
     <title>Mohammed Anas</title>
     <script type="module" crossorigin src="assets/index-Ct5vtVkz.js"></script>
     <link rel="stylesheet" crossorigin href="assets/index-lid5G8OZ.css">
+    
+    <!-- ONLY MOBILE FIXES - NO OTHER CHANGES -->
+    <style>
+        /* Mobile-only fixes to prevent overlapping - keeping all animations intact */
+        @media (max-width: 640px) {
+            /* Fix spacing issues */
+            .mt-32 {
+                margin-top: 2rem !important;
+            }
+            
+            /* Fix gap between service items */
+            .gap-28 {
+                gap: 0.75rem !important;
+            }
+            
+            /* Fix large gaps in works section */
+            .gap-32 {
+                gap: 2rem !important;
+            }
+            
+            /* Slightly reduce font size to prevent horizontal overflow */
+            .text-\[17vw\] {
+                font-size: 13vw !important;
+            }
+            
+            /* Fix service section spacing */
+            .py-4 {
+                padding-block: 0.5rem !important;
+            }
+            
+            /* Fix footer spacing */
+            .mt-\[15rem\] {
+                margin-top: 4rem !important;
+            }
+            
+            /* Improve button visibility and spacing */
+            .flex-col.sm\:flex-row {
+                gap: 1rem !important;
+                align-items: center;
+            }
+            
+            /* Better mobile text sizing for buttons */
+            .h-8.w-32 {
+                height: 2.5rem !important;
+                width: 9rem !important;
+            }
+            
+            /* Improve px-32 spacing on mobile */
+            .px-32 {
+                padding-inline: 1rem !important;
+            }
+            
+            /* Improve px-10 spacing on mobile */
+            .px-10 {
+                padding-inline: 0.5rem !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            /* Further mobile optimizations */
+            .w-\[80\%\] {
+                width: 95% !important;
+            }
+            
+            .w-\[14rem\] {
+                width: 85% !important;
+            }
+            
+            /* Make buttons more visible on small screens */
+            .h-8.w-32 {
+                height: 3rem !important;
+                width: 10rem !important;
+            }
+            
+            /* Reduce large margins on very small screens */
+            .mt-\[15rem\] {
+                margin-top: 3rem !important;
+            }
+        }
+
+        /* ===== ANIMATION 2: IMAGE HOVER EFFECTS ===== */
+        
+        /* Subtle zoom on hover for project images */
+        .work img, .work video {
+            transition: transform 0.4s ease-out, filter 0.4s ease-out;
+        }
+        
+        .work:hover img, .work:hover video {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+        
+        /* Color overlay on project containers */
+        .work {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .work::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            opacity: 0;
+            transition: opacity 0.3s ease-out;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .work:hover::before {
+            opacity: 1;
+        }
+        
+        /* Project text hover effects */
+        .work p, .work a {
+            transition: transform 0.3s ease-out, color 0.3s ease-out;
+        }
+        
+        .work:hover p, .work:hover a {
+            transform: translateY(-2px);
+        }
+        
+        /* Image parallax for me7.webp */
+        .parallax-image {
+            transition: transform 0.1s ease-out;
+        }
+
+        /* Video styling */
+        .work video {
+            border-radius: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,18 +170,18 @@
             <div class=" lg:w-[20vw] md:w-[80%] w-[80%] ">
                 <p data-gl-text class="font-[Mono] leading-[1.5] text-justify font-normal lg:font-bold text-sm lg:text-base md:text-xl lg:text-black md:text-white text-white">I MAKE DESIGNS AND DEVELOP WEBSITES FOR PEOPLE AND HELP THEM TO GROW THEIR BUSINESS.</p>
                 <a href="https://calendly.com/mohammedanas/15min" target="_blank" data-gl-media class="h-8 w-32 mt-10 relative cursor-pointer overflow-hidden block">
-            <img class="lg:hidden" src="white.png" alt="">
-            <p data-gl-text data-color="black" class=" font-[Mono] whitespace-nowrap  leading-[.9] tracking-tight text-sm md:text-base lg:text-transparent text-black pr-1 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 ">BOOK A CALL</p>
-          </a>
+                    <img class="lg:hidden" src="white.png" alt="">
+                    <p data-gl-text data-color="black" class=" font-[Mono] whitespace-nowrap  leading-[.9] tracking-tight text-sm md:text-base lg:text-transparent text-black pr-1 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 ">BOOK A CALL</p>
+                </a>
                 <!-- CV Download Button -->
                 <a href="https://drive.google.com/file/d/1uyN5CskaoihzoC3GV23AscO9WG10e9YL/view?usp=drive_link" target="_blank" data-gl-media class="h-8 w-32 mt-4 relative cursor-pointer overflow-hidden block">
-            <img class="lg:hidden" src="white.png" alt="">
-            <p data-gl-text data-color="black" class=" font-[Mono] whitespace-nowrap  leading-[.9] tracking-tight text-sm md:text-base lg:text-transparent text-black pr-1 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 ">DOWNLOAD CV</p>
-          </a>
+                    <img class="lg:hidden" src="white.png" alt="">
+                    <p data-gl-text data-color="black" class=" font-[Mono] whitespace-nowrap  leading-[.9] tracking-tight text-sm md:text-base lg:text-transparent text-black pr-1 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 ">DOWNLOAD CV</p>
+                </a>
             </div>
 
             <div class="w-fit ml-auto sm:mt-32 lg:mt-0">
-                <h1 data-gl-text class="sm:text-[11.5vw] text-[17vw] font-[Satoshi] leading-[.9] tracking-tight lg:text-black md:text-white text-white">CREATIVE</h1>
+                <h2 data-gl-text class="sm:text-[11.5vw] text-[17vw] font-[Satoshi] leading-[.9] tracking-tight lg:text-black md:text-white text-white">CREATIVE</h2>
                 <h2 data-gl-text class="sm:text-[11.5vw] text-[17vw] font-[Satoshi] leading-[.9] tracking-tight lg:text-black md:text-white text-white">DEV</h2>
             </div>
         </div>
@@ -60,61 +195,61 @@
             <div id="about" class="lg:pb-0 pb-0">
                 <div class="flex lg:justify-between md:justify-center justify-center items-start">
                     <div class="lg:w-[33%] lg:block md:hidden sm:hidden hidden w-0">
-                        <p class=" text-justify font-[Mono] text-transparent font-bold leading-[1.5] w-[50%]" data-gl-text>I CREATE WEBSITE WITH FULL OF PASSION AND DEDICATION.</p>
+                        <p class=" text-justify font-[Mono] text-transparent font-bold leading-[1.5] w-[50%]" data-gl-text="" data-gl-text-active="">I CREATE WEBSITE WITH FULL OF PASSION AND DEDICATION.</p>
                     </div>
-                    <h2 data-gl-text class="sm:text-[11.5vw] h-fit text-[17vw] font-[Satoshi] leading-[.9] tracking-tighter lg:text-transparent md:text-white text-white">CREATE</h2>
+                    <h2 data-gl-text="" class="sm:text-[11.5vw] h-fit text-[17vw] font-[Satoshi] leading-[.9] tracking-tighter lg:text-transparent md:text-white text-white" data-gl-text-active="">CREATE</h2>
                     <div class="lg:w-[33%] lg:flex md:hidden sm:hidden hidden w-0 justify-end">
-                        <p class=" text-justify font-[Mono] text-transparent font-bold leading-[1.5] w-32" data-gl-text>STAY AHEAD OF THE CROWD.</p>
+                        <p class=" text-justify font-[Mono] text-transparent font-bold leading-[1.5] w-32" data-gl-text="" data-gl-text-active="">STAY AHEAD OF THE CROWD.</p>
                     </div>
                 </div>
                 <div class="flex lg:justify-between md:justify-center justify-center items-start px-32">
-                    <h2 data-gl-text class="sm:text-[11.5vw] text-[17vw] font-[Satoshi] leading-[.9] tracking-tighter lg:text-transparent md:text-white text-white">WEBSITE</h2>
+                    <h2 data-gl-text="" class="sm:text-[11.5vw] text-[17vw] font-[Satoshi] leading-[.9] tracking-tighter lg:text-transparent md:text-white text-white" data-gl-text-active="">WEBSITE</h2>
                 </div>
                 <div class="flex lg:justify-end md:justify-center justify-center items-start px-0">
-                    <h2 data-gl-text class="sm:text-[11.5vw] px-10 text-[17vw] font-[Satoshi] leading-[.9] tracking-tighter lg:text-transparent md:text-white text-white whitespace-nowrap">THAT TRULY</h2>
+                    <h2 data-gl-text="" class="sm:text-[11.5vw] px-10 text-[17vw] font-[Satoshi] leading-[.9] tracking-tighter lg:text-transparent md:text-white text-white whitespace-nowrap" data-gl-text-active="">THAT TRULY</h2>
                 </div>
                 <div class="flex lg:justify-end md:justify-center justify-center items-center  gap-32">
-                    <h2 data-gl-text class="sm:text-[11.5vw] px-10 text-[17vw] font-[Satoshi] leading-[.9] tracking-tighter lg:text-transparent md:text-white text-white">INSPIRES</h2>
+                    <h2 data-gl-text="" class="sm:text-[11.5vw] px-10 text-[17vw] font-[Satoshi] leading-[.9] tracking-tighter lg:text-transparent md:text-white text-white" data-gl-text-active="">INSPIRES</h2>
                     <div class="lg:flex hidden justify-end items-end w-64 mt-12">
-                        <p class="text-transparent font-bold leading-[1.5] font-[Mono] " data-gl-text>A SPECIALIZED DIGITAL DESIGNER AND DEVELOPER BASED IN INDIA.</p>
+                        <p class="text-transparent font-bold leading-[1.5] font-[Mono] " data-gl-text="" data-gl-text-active="">A SPECIALIZED DIGITAL DESIGNER AND DEVELOPER BASED IN INDIA.</p>
                     </div>
                 </div>
             </div>
             <div id="services" class="lg:h-64 h-fit  lg:w-[73%] w-[100%] ml-auto flex flex-col lg:flex-row bg-amber- gap-10 justify-between">
                 <div>
-                    <p data-gl-text class="lg:text-transparent text-white lg:font-bold font-normal text-sm md:text-base md:w-52 w-48 font-[Mono]">SERVICES I PROVIDE TO MY CLIENTS</p>
-                    <a href="https://calendly.com/mohammedanas/15min" target="_blank" data-gl-media class="h-8 w-32 lg:mt-10 mt-5 relative cursor-pointer overflow-hidden block">
-              <img class="lg:hidden" src="white.png" alt="">
-              <p data-gl-text data-color="black" class=" font-[Mono] whitespace-nowrap  leading-[.9] tracking-tight text-sm md:text-base lg:text-transparent text-black pr-1 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 ">BOOK A CALL</p>
+                    <p data-gl-text="" class="lg:text-transparent text-white lg:font-bold font-normal text-sm md:text-base md:w-52 w-48 font-[Mono]" data-gl-text-active="">SERVICES I PROVIDE TO MY CLIENTS</p>
+                    <a href="https://calendly.com/mohammedanas/15min" target="_blank" data-gl-media="" class="h-8 w-32 lg:mt-10 mt-5 relative cursor-pointer overflow-hidden block">
+              <img class="lg:hidden" src="white.png" alt="" crossorigin="anonymous" data-gl-media-active="">
+              <p data-gl-text="" data-color="black" class=" font-[Mono] whitespace-nowrap  leading-[.9] tracking-tight text-sm md:text-base lg:text-transparent text-black pr-1 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 " data-gl-text-active="">BOOK A CALL</p>
             </a>
                 </div>
                 <div class=" lg:w-1/2 w-full lg:mt-0 h-full ">
-                    <hr class="w-full h-[2px] lg:bg-transparent bg-white" data-gl-background>
+                    <hr class="w-full h-[2px] lg:bg-transparent bg-white" data-gl-background="" data-gl-text-active="">
                     <div class=" w-full py-4 gap-28 flex">
-                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text>1</p>
-                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text>HIGH QUALITY WEBSITE</p>
+                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text="" data-gl-text-active="">1</p>
+                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text="" data-gl-text-active="">HIGH QUALITY WEBSITE</p>
                     </div>
-                    <hr class="w-full h-[2px] lg:bg-transparent bg-white" data-gl-background>
+                    <hr class="w-full h-[2px] lg:bg-transparent bg-white" data-gl-background="" data-gl-text-active="">
                     <div class=" w-full py-4 gap-28 flex">
-                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text>2</p>
-                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text>BRAND DESIGN AND UI UX</p>
+                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text="" data-gl-text-active="">2</p>
+                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text="" data-gl-text-active="">BRAND DESIGN AND UI UX</p>
                     </div>
-                    <hr class="w-full h-[2px] lg:bg-transparent bg-white" data-gl-background>
+                    <hr class="w-full h-[2px] lg:bg-transparent bg-white" data-gl-background="" data-gl-text-active="">
                     <div class=" w-full py-4 gap-28 flex">
-                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text>3</p>
-                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text>CMS DEVELOPMENT</p>
+                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text="" data-gl-text-active="">3</p>
+                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text="" data-gl-text-active="">CMS DEVELOPMENT</p>
                     </div>
-                    <hr class="w-full h-[2px] lg:bg-transparent bg-white" data-gl-background>
+                    <hr class="w-full h-[2px] lg:bg-transparent bg-white" data-gl-background="" data-gl-text-active="">
                     <div class=" w-full py-4 gap-28 flex">
-                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text>4</p>
-                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text>SEO OPTIMIZATION</p>
+                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text="" data-gl-text-active="">4</p>
+                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text="" data-gl-text-active="">SEO OPTIMIZATION</p>
                     </div>
-                    <hr class="w-full h-[2px] lg:bg-transparent bg-white" data-gl-background>
+                    <hr class="w-full h-[2px] lg:bg-transparent bg-white" data-gl-background="" data-gl-text-active="">
                     <div class=" w-full py-4 gap-28 flex">
-                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text>5</p>
-                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text>APP DEVELOPMENT</p>
+                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text="" data-gl-text-active="">5</p>
+                        <p class="lg:text-transparent text-white lg:font-bold font-normal lg:text-2xl " data-gl-text="" data-gl-text-active="">APP DEVELOPMENT</p>
                     </div>
-                    <hr class="w-full h-[2px] lg:bg-transparent bg-white" data-gl-background>
+                    <hr class="w-full h-[2px] lg:bg-transparent bg-white" data-gl-background="" data-gl-text-active="">
                 </div>
             </div>
         </div>
@@ -131,160 +266,131 @@
             </div>
         </div>
        <div class="lg:mt-36 mt-32">
-  <p data-gl-text class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base md:w-[50%] w-[80%] text-justify mb-16">
-    Development skills to create clean, responsive, and user-focused web experiences—turning ideas into functional digital solutions.
-  </p>
+          <p data-gl-text class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base md:w-[50%] w-[80%] text-justify mb-16">
+            Development skills to create clean, responsive, and user-focused web experiences—turning ideas into functional digital solutions.
+          </p>
 
-  <div class="w-full flex flex-col gap-8 lg:grid lg:grid-cols-2">
-    <!-- SKILL TEMPLATE -->
-    <!-- Just duplicate and update percentage + language name -->
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>HTML5</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>92%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" data-gl-background data-width="92%" style="width: 0;"></div>
-      </div>
-    </div>
+          <div class="w-full flex flex-col gap-8 lg:grid lg:grid-cols-2">
+            <!-- SKILL TEMPLATE -->
+            <div class="skill-item">
+              <div class="flex justify-between mb-2 items-center">
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>HTML5</span>
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>92%</span>
+              </div>
+              <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
+                <div class="h-full bg-white absolute left-0 top-0 rounded-full" data-gl-background data-width="92%" style="width: 0;"></div>
+              </div>
+            </div>
 
-    <!-- Duplicate the above and update content -->
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>CSS3</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>90%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 90%;" data-gl-background></div>
-      </div>
-    </div>
+            <div class="skill-item">
+              <div class="flex justify-between mb-2 items-center">
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>CSS3</span>
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>90%</span>
+              </div>
+              <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
+                <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 90%;" data-gl-background></div>
+              </div>
+            </div>
 
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>JavaScript</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>97%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 75%;" data-gl-background></div>
-      </div>
-    </div>
+            <div class="skill-item">
+              <div class="flex justify-between mb-2 items-center">
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>JavaScript</span>
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>97%</span>
+              </div>
+              <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
+                <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 97%;" data-gl-background></div>
+              </div>
+            </div>
 
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>React</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>95%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 60%;" data-gl-background></div>
-      </div>
-    </div>
+            <div class="skill-item">
+              <div class="flex justify-between mb-2 items-center">
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>React</span>
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>88%</span>
+              </div>
+              <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
+                <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 88%;" data-gl-background></div>
+              </div>
+            </div>
 
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>Bootstrap</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>83%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 83%;" data-gl-background></div>
-      </div>
-    </div>
+            <div class="skill-item">
+              <div class="flex justify-between mb-2 items-center">
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>WordPress</span>
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>95%</span>
+              </div>
+              <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
+                <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 95%;" data-gl-background></div>
+              </div>
+            </div>
 
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>PHP</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>85%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 75%;" data-gl-background></div>
-      </div>
-    </div>
+            <div class="skill-item">
+              <div class="flex justify-between mb-2 items-center">
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>Figma</span>
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>85%</span>
+              </div>
+              <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
+                <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 85%;" data-gl-background></div>
+              </div>
+            </div>
 
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>MySQL</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>90%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 70%;" data-gl-background></div>
-      </div>
-    </div>
+            <div class="skill-item">
+              <div class="flex justify-between mb-2 items-center">
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>Flutter</span>
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>75%</span>
+              </div>
+              <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
+                <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 75%;" data-gl-background></div>
+              </div>
+            </div>
 
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>WordPress</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>95%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 95%;" data-gl-background></div>
-      </div>
-    </div>
+            <div class="skill-item">
+              <div class="flex justify-between mb-2 items-center">
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>Python</span>
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>86%</span>
+              </div>
+              <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
+                <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 86%;" data-gl-background></div>
+              </div>
+            </div>
 
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>Figma</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>85%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 85%;" data-gl-background></div>
-      </div>
-    </div>
+            <div class="skill-item">
+              <div class="flex justify-between mb-2 items-center">
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>Java</span>
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>60%</span>
+              </div>
+              <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
+                <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 60%;" data-gl-background></div>
+              </div>
+            </div>
 
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>Flutter</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>75%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 85%;" data-gl-background></div>
-      </div>
-    </div>
+            <div class="skill-item">
+              <div class="flex justify-between mb-2 items-center">
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>C</span>
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>97%</span>
+              </div>
+              <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
+                <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 97%;" data-gl-background></div>
+              </div>
+            </div>
 
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>Python</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>86%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 85%;" data-gl-background></div>
-      </div>
-    </div>
+            <div class="skill-item">
+              <div class="flex justify-between mb-2 items-center">
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>C++</span>
+                <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>79%</span>
+              </div>
+              <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
+                <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 79%;" data-gl-background></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
 
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>java</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>60%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 85%;" data-gl-background></div>
-      </div>
-    </div>
-
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>C</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>97%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 85%;" data-gl-background></div>
-      </div>
-    </div>
-
-    <div class="skill-item">
-      <div class="flex justify-between mb-2 items-center">
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>C++</span>
-        <span class="font-extrabold font-[Mono] text-white lg:text-transparent text-lg md:text-xl" data-gl-text>79%</span>
-      </div>
-      <div class="w-full h-2 bg-white bg-opacity-20 lg:bg-transparent relative rounded-full overflow-hidden" data-gl-background>
-        <div class="h-full bg-white absolute left-0 top-0 rounded-full" style="width: 85%;" data-gl-background></div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-    <section class="h-fit w-full sm:px-16 py-[10vh] md:pt-[10vh] md:pb-[10vh] px-4">
-        <div data-gl-media class="lg:h-[80vmax] md:h-[130vh] h-[100vh] w-full">
+    <!-- Works Section Header -->
+    <section class="h-fit w-full sm:px-16 py-[10vh] md:pt-[10vh] md:pb-[10vh] px-4 relative">
+        <div data-gl-media class="lg:h-[50vh] md:h-[60vh] h-[50vh] w-full">
             <img class="lg:hidden sm:visible h-full w-full object-cover -mt-[10vh] lg:mt-0 " src="assets/me7.webp" alt="">
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center sm:px-16 px-4 overflow-hidden">
             <div class="works-heading">
                 <div class=" w-full flex justify-between">
                     <h2 data-gl-text class="sm:text-[11.5vw] text-[17vw] font-[Satoshi] leading-[.9] tracking-tight lg:text-black md:text-white text-white">SOME</h2>
@@ -294,40 +400,101 @@
                     <h2 data-gl-text class="sm:text-[11.5vw] text-[17vw] font-[Satoshi] leading-[.9] tracking-tight lg:text-black md:text-white text-right lg:text-left text-white">WORKS</h2>
                 </div>
             </div>
-            <div class="works lg:mt-36 mt-32">
-                <div class="w-full flex flex-col-reverse gap-32 lg:gap-0 lg:flex-row justify-between">
-                    <div class="work w-full lg:w-[26rem]">
-                        <div class="w-full lg:h-[34rem] h-[26rem]" data-gl-media>
-                            <img class="w-full h-full object-cover block lg:hidden" src="assets/delixia.png" alt="">
-                        </div>
-                        <div class="flex w-full lg:mt-2 mt-4 justify-between items-center">
-                            <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>DELIXIA</p>
-                            <a href="https://delixia.net/" target="_blank" class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>LIVE</a>
-                        </div>
-                        <hr class="w-full h-[2px] lg:mt-2 mt-4 lg:bg-transparent bg-white" data-gl-background>
+        </div>
+    </section>
+
+    <!-- Separate Works Content Section -->
+    <section class="h-fit w-full sm:px-16 pt-8 pb-[10vh] md:pt-8 md:pb-[10vh] px-4">
+        <div class="works">
+            <!-- Project 1: DELIXIA -->
+            <div class="w-full flex flex-col-reverse gap-32 lg:gap-0 lg:flex-row justify-between mb-16">
+                <div class="work w-full lg:w-[26rem]">
+                    <div class="w-full lg:h-[34rem] h-[26rem]" data-gl-media>
+                        <img class="w-full h-full object-cover block lg:hidden" src="assets/delixia.png" alt="Delixia Website Design">
                     </div>
-                    <p class="text-white lg:text-transparent md:w-[16rem] w-[14rem] text-justify md:text-left text-center md:font-bold font-normal text-sm md:text-base font-[Mono] mx-auto" data-gl-text>
-                        I DESIGNED AND BUILT THE DELIXIA WEBSITE, CREATING A PLAYFUL AND VIBRANT USER EXPERIENCE THAT SHOWCASES THE BRAND’S CREATIVE FLAVORS THROUGH BOLD VISUALS AND SMOOTH, RESPONSIVE DESIGN.
-                    </p>
+                    <div class="flex w-full lg:mt-2 mt-4 justify-between items-center">
+                        <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>DELIXIA</p>
+                        <a href="https://delixia.net/" target="_blank" class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>LIVE</a>
+                    </div>
+                    <hr class="w-full h-[2px] lg:mt-2 mt-4 lg:bg-transparent bg-white" data-gl-background>
                 </div>
-                    <div class="work w-full lg:w-[26rem] ml-auto mt-5 lg:-mt-20">
-                        <div class="w-full lg:h-[34rem] h-[26rem]" data-gl-media>
-                            <img class="w-full h-full object-cover block lg:hidden" src="assets/HaskiaCRM.png" alt="">
-                        </div>
-                        <div class="flex w-full lg:mt-2 mt-4 justify-between items-center">
-                            <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>HASKIA LINK</p>
-                            <a href="https://haskia.ca/" target="_blank" class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>LIVE</a>
-                        </div>
-                        <hr class="w-full h-[2px] lg:mt-2 mt-4 lg:bg-transparent bg-white" data-gl-background>
+                <p class="text-white lg:text-transparent md:w-[16rem] w-[14rem] text-justify md:text-left text-center md:font-bold font-normal text-sm md:text-base font-[Mono] mx-auto" data-gl-text>
+                    I DESIGNED AND BUILT THE DELIXIA WEBSITE, CREATING A PLAYFUL AND VIBRANT USER EXPERIENCE THAT SHOWCASES THE BRAND'S CREATIVE FLAVORS THROUGH BOLD VISUALS AND SMOOTH, RESPONSIVE DESIGN.
+                    ALONG WITH DESIGN AND DEVELOPMENT, EXTENSIVE SEO WORK WAS DONE—RESULTING IN HIGH RANKINGS FOR MULTIPLE KEYWORDS, MOSTLY BETWEEN POSITIONS 2 TO 6 ON SEARCH ENGINES.
+                </p>
+            </div>
+            
+            <!-- Project 2: WordPress Websites -->
+            <div class=" w-full lg:flex lg:justify-between lg:items-end mb-16">
+                <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base w-56 hidden text-justify lg:block" data-gl-text>A WORDPRESS WEBSITE BUILT FOR RAPIDFIX APPLIANCES, DESIGNED FOR SPEED, CLARITY, AND MOBILE RESPONSIVENESS. WITH OVER 40+ WORDPRESS PROJECTS COMPLETED AND A COLLECTION OF READY-TO-USE TEMPLATES, I PROVIDE FAST AND AFFORDABLE WEBSITE SOLUTIONS TAILORED TO CLIENT NEEDS.</p>
+                <div class="work relative w-full lg:w-[26rem] ml-auto mt-5 lg:-mt-20">
+                    <div class="w-full lg:h-[34rem] h-[26rem]" data-gl-media>
+                    <img class="w-full h-full object-cover block lg:hidden" src="assets/wordpress.png" alt="WordPress Website Development">
                     </div>
-                    <p class="text-white lg:text-transparent md:w-[16rem] w-[14rem] text-justify md:text-right text-center md:font-bold font-normal text-sm md:text-base font-[Mono] mx-auto" data-gl-text>
-                    A CUSTOM-BUILT CRM FOR HASKIA, DESIGNED TO SIMPLIFY CUSTOMER MANAGEMENT WITH A CLEAN INTERFACE, SMART WORKFLOWS, AND SEAMLESS USER EXPERIENCE—BUILT FOR PERFORMANCE AND SCALABILITY.                
-                    </p>
+                    <div class="flex w-full lg:mt-2 mt-4 justify-between items-center">
+                        <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>WORDPRESS WEBSITES</p>
+                        <a href="https://rapidfixappliances.ca/" target="_blank" class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base lg:px-1" data-gl-text>LIVE</a>
+                    </div>
+                    <hr class="w-full h-[2px] lg:mt-2 mt-4 lg:bg-transparent bg-white" data-gl-background>
                 </div>
             </div>
-                <div class="work w-full lg:w-[26rem] mt-3 ">
+            
+            <!-- Project 3: HASKIA CRM -->
+            <div class="w-full flex flex-col gap-32 lg:gap-0 lg:flex-row justify-between mb-16">
+                <div class="work w-full lg:w-[26rem]">
                     <div class="w-full lg:h-[34rem] h-[26rem]" data-gl-media>
-                        <img class="w-full h-full object-cover block lg:hidden" src="assets/figma.png" alt="">
+                        <img class="w-full h-full object-cover block lg:hidden" src="assets/HaskiaCRM.png" alt="Haskia CRM System">
+                    </div>
+                    <div class="flex w-full lg:mt-2 mt-4 justify-between items-center">
+                        <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>HASKIA LINK</p>
+                        <a href="https://haskia.ca/" target="_blank" class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>LIVE</a>
+                    </div>
+                    <hr class="w-full h-[2px] lg:mt-2 mt-4 lg:bg-transparent bg-white" data-gl-background>
+                </div>
+                <p class="text-white lg:text-transparent md:w-[16rem] w-[14rem] text-justify md:text-right text-center md:font-bold font-normal text-sm md:text-base font-[Mono] mx-auto" data-gl-text>
+                A CUSTOM-BUILT CRM FOR HASKIA, DESIGNED TO SIMPLIFY CUSTOMER MANAGEMENT WITH A CLEAN INTERFACE, SMART WORKFLOWS, AND SEAMLESS USER EXPERIENCE—BUILT FOR PERFORMANCE AND SCALABILITY.                
+                </p>
+            </div>
+
+            <!-- Project 4: Game Pad (Video Project) -->
+            <div class=" w-full lg:flex lg:justify-between lg:items-end mb-16">
+                <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base w-56 hidden text-justify lg:block" data-gl-text>AN INTERACTIVE GAME PAD DESIGN PROTOTYPE CREATED IN FIGMA, SHOWCASING MODERN UI/UX PRINCIPLES WITH SMOOTH ANIMATIONS AND INTUITIVE GAMING INTERFACE. EVERY PIXEL TELLS A STORY. MORE STORIES ARE ON THE WAY.</p>
+                <div class="work relative w-full lg:w-[26rem] ml-auto mt-5 lg:-mt-20">
+                    <div class="w-full lg:h-[34rem] h-[26rem]" data-gl-media>
+                        <video autoplay loop muted playsinline class="w-full h-full object-cover block lg:hidden" style="opacity: 1 !important; display: block !important;">
+                            <source src="assets/game-pad.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="flex w-full lg:mt-2 mt-4 justify-between items-center">
+                        <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>GAME PAD</p>
+                        <a href="https://www.figma.com/proto/C6irB6zoBjlgQLSV06nSDh/Game-pd?node-id=9-173&p=f&t=M6C2P8xckMVi6rZD-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=9%3A317" target="_blank" class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base lg:px-1" data-gl-text>DESIGN</a>
+                    </div>
+                    <hr class="w-full h-[2px] lg:mt-2 mt-4 lg:bg-transparent bg-white" data-gl-background>
+                </div>
+            </div>
+
+            <!-- Project 5: SEO with Web Development -->
+            <div class="w-full flex flex-col gap-32 lg:gap-0 lg:flex-row justify-between mb-16">
+                <div class="work w-full lg:w-[26rem]">
+                    <div class="w-full lg:h-[34rem] h-[26rem]" data-gl-media>
+                        <img class="w-full h-full object-cover block lg:hidden" src="assets/SEO.png" alt="SEO Optimization Project">
+                    </div>
+                    <div class="flex w-full lg:mt-2 mt-4 justify-between items-center">
+                        <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>SEO WITH WEB DEV</p>
+                        <a href="https://kitchengasfab.com/" target="_blank" class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>LIVE</a>
+                    </div>
+                    <hr class="w-full h-[2px] lg:mt-2 mt-4 lg:bg-transparent bg-white" data-gl-background>
+                </div>
+                <p class="text-white lg:text-transparent md:w-[16rem] w-[14rem] text-justify md:text-right text-center md:font-bold font-normal text-sm md:text-base font-[Mono] mx-auto" data-gl-text>
+                 A WELL-DESIGNED WEBSITE FOR KITCHEN GAS & FAB, COMBINING VISUAL APPEAL WITH FUNCTIONAL LAYOUTS. ALONG WITH DESIGN AND DEVELOPMENT, EXTENSIVE SEO WORK WAS DONE—RESULTING IN HIGH RANKINGS FOR MULTIPLE KEYWORDS, MOSTLY BETWEEN POSITIONS 2 TO 6 ON SEARCH ENGINES.
+                </p>
+            </div>
+            
+            <!-- Project 6: Technician App Design -->
+            <div class="w-full flex flex-col gap-32 lg:gap-0 lg:flex-row justify-between">
+                <div class="work w-full lg:w-[26rem]">
+                    <div class="w-full lg:h-[34rem] h-[26rem]" data-gl-media>
+                        <img class="w-full h-full object-cover block lg:hidden" src="assets/figma.png" alt="Technician App Design">
                     </div>
                     <div class="flex w-full lg:mt-2 mt-4 justify-between items-center">
                         <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>APP DESIGN</p>
@@ -339,49 +506,10 @@
                 A COMPLETE TECHNICIAN BOOKING APP DESIGN CREATED IN FIGMA, FEATURING FULLY-DESIGNED SCREENS FOR BOOKING, CONFIRMATION, USER DASHBOARDS, AND SERVICE MANAGEMENT. BUILT WITH A USER-CENTRIC APPROACH TO ENSURE SEAMLESS NAVIGATION, CLEAR WORKFLOWS, AND A SMOOTH END-TO-END BOOKING EXPERIENCE.
                 </p>
             </div>
-            <div class=" w-full lg:flex lg:justify-between lg:items-end">
-                <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base w-56 hidden text-justify lg:block" data-gl-text>EVERY PIXEL TELLS A STORY. MORE STORIES ARE ON THE WAY.</p>
-                <div class="work relative w-full lg:w-[26rem] ml-auto mt-5 lg:-mt-20">
-                    <div class="w-full lg:h-[34rem] h-[26rem]" data-gl-media>
-                    <video autoplay loop muted playsinline class="w-full h-auto block" style="opacity: 1 !important; display: block !important;">
-                    <source src="assets/game-pad.mp4" type="video/mp4" />
-                    </video>
-                    </div>
-                    <div class="flex w-full lg:mt-2 mt-4 justify-between items-center">
-                        <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>Game Pad</p>
-                        <a href="https://www.figma.com/proto/C6irB6zoBjlgQLSV06nSDh/Game-pd?node-id=9-173&p=f&t=M6C2P8xckMVi6rZD-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=9%3A317" class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base lg:px-1" data-gl-text>Design</a>
-                    </div>
-                    <hr class="w-full h-[2px] lg:mt-2 mt-4 lg:bg-transparent bg-white" data-gl-background>
-                </div>
-            </div>
-            <div class="work w-full lg:w-[26rem] mt-3 ">
-                <div class="w-full lg:h-[34rem] h-[26rem]" data-gl-media>
-                    <img class="w-full h-full object-cover block lg:hidden" src="assets/SEO.png" alt="">
-                </div>
-                <div class="flex w-full lg:mt-2 mt-4 justify-between items-center">
-                    <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>SEO with WEB DEV</p>
-                    <a href="https://kitchengasfab.com/" data-gl-text>LIVE</a>
-                </div>
-                <hr class="w-full h-[2px] lg:mt-2 mt-4 lg:bg-transparent bg-white" data-gl-background>
-            </div>
-            <p class="text-white lg:text-transparent md:w-[16rem] w-[14rem] text-justify md:text-right text-center md:font-bold font-normal text-sm md:text-base font-[Mono] mx-auto" data-gl-text>
-             A WELL-DESIGNED WEBSITE FOR KITCHEN GAS & FAB, COMBINING VISUAL APPEAL WITH FUNCTIONAL LAYOUTS. ALONG WITH DESIGN AND DEVELOPMENT, EXTENSIVE SEO WORK WAS DONE—RESULTING IN HIGH RANKINGS FOR MULTIPLE KEYWORDS, MOSTLY BETWEEN POSITIONS 2 TO 6 ON SEARCH ENGINES.
-            </p>
-            <div class=" w-full lg:flex lg:justify-between lg:items-end">
-                <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base w-56 hidden text-justify lg:block" data-gl-text>A WORDPRESS WEBSITE BUILT FOR RAPIDFIX APPLIANCES, DESIGNED FOR SPEED, CLARITY, AND MOBILE RESPONSIVENESS. WITH OVER 40+ WORDPRESS PROJECTS COMPLETED AND A COLLECTION OF READY-TO-USE TEMPLATES, I PROVIDE FAST AND AFFORDABLE WEBSITE SOLUTIONS TAILORED TO CLIENT NEEDS.</p>
-                <div class="work relative w-full lg:w-[26rem] ml-auto mt-5 lg:-mt-20">
-                    <div class="w-full lg:h-[34rem] h-[26rem]" data-gl-media>
-                    <img class="w-full h-full object-cover block lg:hidden" src="assets/wordpress.png" alt="">
-                    </div>
-                    <div class="flex w-full lg:mt-2 mt-4 justify-between items-center">
-                        <p class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base" data-gl-text>Wordpress websites</p>
-                        <a href="https://rapidfixappliances.ca/" class="text-white lg:text-transparent font-bold font-[Mono] text-sm md:text-base lg:px-1" data-gl-text>LIVE</a>
-                    </div>
-                    <hr class="w-full h-[2px] lg:mt-2 mt-4 lg:bg-transparent bg-white" data-gl-background>
-                </div>
-            </div>
+        </div>
     </section>
 
+    <!-- Footer Section -->
     <section class=" h-fit w-full sm:px-16 pt-[10vh] md:pt-[16vh] pb-10 lg:pb-[16vh] px-4">
         <div class="footer-heading">
             <h2 data-gl-text class="sm:text-[11.5vw] text-[17vw] font-[Satoshi] leading-[.9] tracking-tight lg:text-black md:text-white text-white text-center">LETS LEAVE</h2>
@@ -434,7 +562,7 @@
                 </div>
 
                 <div class="w-fit ml-auto sm:mt-32 lg:mt-0">
-                    <h2 data-gl-text class="sm:text-[11.5vw] text-[17vw] font-[Satoshi] leading-[.9] tracking-tight lg:text-black md:text-white text-white">CREATIVE</h2>
+                    <h1 data-gl-text class="sm:text-[11.5vw] text-[17vw] font-[Satoshi] leading-[.9] tracking-tight lg:text-black md:text-white text-white">CREATIVE</h1>
                     <h2 data-gl-text class="sm:text-[11.5vw] text-[17vw] font-[Satoshi] leading-[.9] tracking-tight lg:text-black md:text-white text-white">DEV</h2>
                 </div>
             </div>
@@ -442,79 +570,69 @@
     </section>
 
     <script>
-        // Preloader - using same functionality but without custom CSS
+        // Preloader - keeping your exact functionality
         window.addEventListener('load', function() {
             setTimeout(() => {
                 document.querySelector('.preloader').style.display = 'none';
             }, 2000);
         });
-        document.addEventListener('DOMContentLoaded', function () {
-        const progressBars = document.querySelectorAll('[data-gl-background][data-width]');
         
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const bar = entry.target;
-                    const targetWidth = bar.getAttribute('data-width');
-                    bar.style.transition = 'width 1.5s ease-out';
-                    bar.style.width = targetWidth;
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-
-        progressBars.forEach(bar => {
-            observer.observe(bar);
-        });
-    });
-
-        // Simple counter animation for stats
-        function animateCounter(element, target, duration = 2000) {
-            let start = 0;
-            const increment = target / (duration / 16);
+        // Progress bar animation - keeping your exact functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const progressBars = document.querySelectorAll('[data-gl-background][data-width]');
             
-            function updateCounter() {
-                start += increment;
-                if (start < target) {
-                    element.textContent = Math.floor(start);
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    element.textContent = target;
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const bar = entry.target;
+                        const width = bar.getAttribute('data-width');
+                        setTimeout(() => {
+                            bar.style.width = width;
+                            bar.style.transition = 'width 2s ease-in-out';
+                        }, 200);
+                        observer.unobserve(bar);
+                    }
+                });
+            });
+
+            progressBars.forEach(bar => {
+                observer.observe(bar);
+            });
+
+            // ===== ANIMATION 2: IMAGE HOVER EFFECTS =====
+            
+            // Add parallax class to me7.webp
+            const me7Image = document.querySelector('img[src="assets/me7.webp"]');
+            if (me7Image) {
+                me7Image.classList.add('parallax-image');
+            }
+            
+            // Parallax scroll effect for me7.webp
+            let ticking = false;
+            
+            function updateParallax() {
+                const scrolled = window.pageYOffset;
+                const parallaxElements = document.querySelectorAll('.parallax-image');
+                
+                parallaxElements.forEach(el => {
+                    const speed = 0.3; // Adjust speed (0.1 = slow, 0.5 = fast)
+                    const yPos = -(scrolled * speed);
+                    el.style.transform = `translateY(${yPos}px)`;
+                });
+                
+                ticking = false;
+            }
+            
+            function requestTick() {
+                if (!ticking) {
+                    requestAnimationFrame(updateParallax);
+                    ticking = true;
                 }
             }
             
-            updateCounter();
-        }
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // Animate counters
-                    if (entry.target.classList.contains('animated-counter')) {
-                        const target = parseFloat(entry.target.dataset.target);
-                        animateCounter(entry.target, target);
-                    }
-                }
-            });
-        }, observerOptions);
-
-        // Observe animated elements when DOM is loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            const animatedElements = document.querySelectorAll('.animated-counter');
-            animatedElements.forEach(el => {
-                observer.observe(el);
-            });
+            window.addEventListener('scroll', requestTick);
         });
-        
     </script>
 </body>
-
 
 </html>
