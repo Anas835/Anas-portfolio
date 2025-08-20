@@ -73,9 +73,25 @@ When making changes to this portfolio:
 4. **Performance**: Keep the lightweight, fast-loading nature of the site
 5. **Analytics**: Respect the privacy-focused approach with Plausible.io
 
+## Development Commands
+
+Since this is a static site with pre-bundled assets, there are no build commands required:
+
+- **Serving locally**: Use any static file server (e.g., `python -m http.server 8000`, VS Code Live Server, or `npx serve .`)
+- **Testing**: Manual testing in browser - no automated test suite
+- **Linting**: No linting setup - code is pre-bundled
+- **Deployment**: Direct file upload/sync to hosting platform
+
 ## Deployment
 
 This is a static site that can be deployed to any static hosting platform:
 - Currently configured for Vercel (based on _vercel/ directory)
 - No build step required - files can be served directly
 - Ensure all asset paths remain relative
+
+## Important Architecture Notes
+
+- **Bundled Assets**: The main JavaScript (`assets/index-Ct5vtVkz.js`) and CSS (`assets/index-lid5G8OZ.css`) are pre-compiled and minified
+- **No Source Files**: This repository contains only the production-ready static files, not the original source code
+- **Mobile Fixes**: Custom CSS in `index.html` addresses mobile-specific layout issues while preserving animations
+- **Analytics**: Plausible.io script is self-hosted in `plausible.io/js/script.js` for privacy
